@@ -4,12 +4,12 @@ import { Text, View } from 'react-native';
 
 // Create a component
 // Same name as file
-const Header = () => {
+const Header = (props) => {
    //destructuring
     const { textStyle, viewStyle } = styles;
     return (
       <View style={viewStyle}>
-        <Text style={textStyle}>Albums</Text>
+        <Text style={textStyle}>{props.headerText}</Text>
       </View>
     );
 };
